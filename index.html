@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Curriculum Vitae</title>
+
+<style>
+body {
+  background: linear-gradient(to right, #dbeafe, #bfdbfe);
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+  animation: fondo 6s infinite alternate;
+}
+
+/* ANIMACIÓN FONDO SUAVE */
+@keyframes fondo {
+  0% { background: linear-gradient(to right, #dbeafe, #bfdbfe); }
+  100% { background: linear-gradient(to right, #bfdbfe, #93c5fd); }
+}
+
+/* TÍTULO */
+h1 {
+  color: #1e3a8a;
+  margin-top: 20px;
+  animation: fadeDown 1s ease;
+}
+
+/* IMAGEN */
+img {
+  border-radius: 50%;
+  margin-top: 15px;
+  border: 4px solid #1e3a8a;
+  transition: transform 0.4s, box-shadow 0.4s;
+  animation: zoomIn 1s ease;
+}
+
+img:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0px 20px rgba(30,58,138,0.6);
+}
+
+/* TARJETA */
+.presentacion {
+  margin: 20px auto;
+  width: 60%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  font-size: 18px;
+  animation: fadeUp 1.2s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.presentacion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+/* NAV */
+nav {
+  background-color:#1e3a8a;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* EFECTO SUBRAYADO PRO */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: yellow;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* ANIMACIONES */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Curriculum Vitae</h1>
+
+<img src="iscoj.jpeg" width="200">
+
+<div class="presentacion">
+  <p>
+    Soy una persona responsable, con sueños grandes y mentalidad fuerte.  
+    Me gusta superarme cada día, aprender cosas nuevas y dar siempre lo mejor de mí.  
+    El fútbol no solo es un hobby, es parte de quien soy y de lo que quiero lograr. ⚽🔥  
+    Siempre voy hacia adelante, porque rendirse no es opción.
+  </p>
+</div>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="datos.html">Datos Personales</a>
+  <a href="academico.html">Académico</a>
+  <a href="Habilidades.html">Habilidades</a>
+  <a href="laborales.html">Laborales</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="referencias.html">Referencias</a>
+</nav>
+
+</body>
+</html>

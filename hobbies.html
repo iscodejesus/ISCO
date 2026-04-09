@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Hobbies</title>
+
+<style>
+body {
+  background: linear-gradient(to right, #dbeafe, #bfdbfe);
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+/* TÍTULO */
+h1 {
+  color: #1e3a8a;
+  margin-top: 20px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+  width: 70%;
+  margin: 20px auto;
+}
+
+/* TARJETAS */
+.card {
+  background-color: white;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.3s; }
+.card:nth-child(2) { animation-delay: 0.6s; }
+.card:nth-child(3) { animation-delay: 0.9s; }
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MEDIA */
+video, audio {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BOTÓN */
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background-color: #0f172a;
+}
+
+/* NAV ABAJO */
+nav {
+  background-color: #1e3a8a;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Hobbies</h1>
+
+<div class="contenedor">
+
+  <div class="card">
+    <h2>Fútbol ⚽</h2>
+    <p>Me gusta jugar fútbol en mi tiempo libre, mejorar mis habilidades y mantenerme activo.</p>
+    <video controls>
+      <source src="futbol.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </div>
+
+  <div class="card">
+    <h2>Ver al Barcelona </h2>
+    <p>Me gusta ver los partidos de mi equipo favorito. Todos los fines de semana y los dias que juegan</p>
+    <video controls>
+      <source src="barcelona.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </div>
+
+  <div class="card">
+    <h2>Música 🎧</h2>
+    <p>Disfruto escuchar música para motivarme y concentrarme.</p>
+    <audio controls>
+      <source src="imu.mp4" type="audio/mpeg">
+      <source src="mi gran amor.mp4" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </div>
+
+  <div class="card">
+    <h2>Música 🎧</h2>
+    <p>Disfruto escuchar música para motivarme y concentrarme.</p>
+    <audio controls>
+      <source src="mi gran amor.mp4" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </div>
+
+  <div class="card">
+    <h2>Aprender Computación 💻</h2>
+    <p>Me interesa aprender sobre tecnología, programación y mejorar mis habilidades digitales.</p>
+  </div>
+
+  <a href="index.html" class="boton">⬅ Volver al Inicio</a>
+
+</div>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="datos.html">Datos Personales</a>
+  <a href="academico.html">Académico</a>
+  <a href="Habilidades.html">Habilidades</a>
+  <a href="laborales.html">Laborales</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="referencias.html">Referencias</a>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Datos Personales</title>
+
+<style>
+body {
+  background: linear-gradient(to right, #dbeafe, #bfdbfe);
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+/* TÍTULO */
+h1 {
+  color:#1e3a8a;
+  margin-top: 20px;
+  animation: fadeDown 1s ease;
+}
+
+/* TARJETA */
+.datos {
+  margin: 20px auto;
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  animation: fadeUp 1s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.datos:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.3);
+}
+
+h2 {
+  font-weight: normal;
+}
+
+/* BOTÓN */
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color:#1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.boton:hover {
+  background-color: #0f172a;
+  transform: scale(1.1);
+}
+
+/* NAV ABAJO */
+nav {
+  background-color:#1e3a8a;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* ANIMACIONES */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Datos Personales</h1>
+
+<div class="datos">
+  <h2>Nombre: Jose Francisco Gonzalez de Jesus</h2>
+  <h2>Dirección: Zona 3 de Barcenas, Villa Nueva</h2>
+  <h2>Teléfono: 39294948</h2>
+  <h2>Email: iscodejesus30@gmail.com</h2>
+  <h2>Edad: 16</h2>
+  <h2>Nacionalidad: Guatemalteco</h2>
+
+  <a href="index.html" class="boton">⬅ Volver al Inicio</a>
+</div>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="datos.html">Datos Personales</a>
+  <a href="academico.html">Académico</a>
+  <a href="Habilidades.html">Habilidades</a>
+  <a href="laborales.html">Laborales</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="referencias.html">Referencias</a>
+</nav>
+
+</body>
+</html>
